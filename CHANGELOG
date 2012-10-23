@@ -1,0 +1,3 @@
+Release 1.0.0f0:
+
+PLOGLCOR-1: Added support for Loggers, Sinks (Console/File), Formatters support

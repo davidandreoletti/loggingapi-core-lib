@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C707D9CB15E99A5A00CD889E /* check-source-code-against-google-c++-style-guide */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C707D9CC15E99A5A00CD889E /* Build configuration list for PBXAggregateTarget "check-source-code-against-google-c++-style-guide" */;
+			buildPhases = (
+				C707D9CF15E99A5F00CD889E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "check-source-code-against-google-c++-style-guide";
+			productName = "Check source code against Google C++ Style Guide";
+		};
+		C707D9D015E99ACB00CD889E /* build-docset */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C707D9D115E99ACB00CD889E /* Build configuration list for PBXAggregateTarget "build-docset" */;
+			buildPhases = (
+				C707D9D415E99AD100CD889E /* Build Documentation */,
+			);
+			dependencies = (
+			);
+			name = "build-docset";
+			productName = "build-docset";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		C70CEDB015E7BF5100017A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70CEDAF15E7BF5100017A65 /* Foundation.framework */; };
+		C70CEDBF15E7BF5100017A65 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70CEDBE15E7BF5100017A65 /* SenTestingKit.framework */; };
+		C70CEDC215E7BF5100017A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70CEDAF15E7BF5100017A65 /* Foundation.framework */; };
+		C70CEDC515E7BF5100017A65 /* libloggingapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C70CEDAC15E7BF5100017A65 /* libloggingapi.a */; };
+		C712B1381623A0CB001C6DCF /* loggingapiTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C75F3E3716148AA60023C0D2 /* loggingapiTests.h */; };
+		C725AE2A162E28EE00581153 /* ConsoleSinkTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C725AE29162E28EE00581153 /* ConsoleSinkTest.cpp */; };
+		C73D72FA16148B1E00AE28CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C73D72F816148B1E00AE28CD /* InfoPlist.strings */; };
+		C73D72FD16148C9000AE28CD /* LoggingAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C73D72FC16148C9000AE28CD /* LoggingAPITest.cpp */; };
+		C73D734A1616A2B600AE28CD /* Core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C73D73491616A2B600AE28CD /* Core.cpp */; };
+		C7409BBB16251CC500EBCF5D /* LoggerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7409BBA16251CC500EBCF5D /* LoggerTest.cpp */; };
+		C74628351606A37900717E19 /* libboost_unit_test_framework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C74628341606A37900717E19 /* libboost_unit_test_framework.a */; };
+		C74A862716359C4600E44D3C /* LoggingAPITrivial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C74A862616359C4600E44D3C /* LoggingAPITrivial.cpp */; };
+		C74D8209162F8410001460C5 /* FileSinkTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C74D8208162F8410001460C5 /* FileSinkTest.cpp */; };
+		C75F3E2316148A350023C0D2 /* TestRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75F3E1F16148A350023C0D2 /* TestRunner.cpp */; };
+		C75F3E2E16148A470023C0D2 /* Attribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75F3E2616148A470023C0D2 /* Attribute.cpp */; };
+		C75F3E3216148A470023C0D2 /* LoggingAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C75F3E2D16148A470023C0D2 /* LoggingAPI.cpp */; };
+		C75F3E3B16148AA60023C0D2 /* loggingapiTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C75F3E3816148AA60023C0D2 /* loggingapiTests.mm */; };
+		C76AF57B161BC3D1006484B4 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C76AF57A161BC3D1006484B4 /* Logger.cpp */; };
+		C7AD265D163425100005CA7E /* CriteriaChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7AD265A163424F90005CA7E /* CriteriaChecker.cpp */; };
+		C7AD2660163425400005CA7E /* CriteriaCheckerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7AD265F163425400005CA7E /* CriteriaCheckerTest.cpp */; };
+		C7BB03A5160DECA8000AD3AA /* libloggingapi.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = C70CEDAC15E7BF5100017A65 /* libloggingapi.a */; };
+		C7C123EB162CDEB5007E84B6 /* Record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7C123E7162CDEB5007E84B6 /* Record.cpp */; };
+		C7C123EC162CDEB5007E84B6 /* ConsoleSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7C123E9162CDEB5007E84B6 /* ConsoleSink.cpp */; };
+		C7C123ED162CDEB5007E84B6 /* FileSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7C123EA162CDEB5007E84B6 /* FileSink.cpp */; };
+		C7D878D41630D43200DEE3EC /* Formatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7D878D31630D43200DEE3EC /* Formatter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C70CEDC315E7BF5100017A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70CEDA315E7BF5100017A65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70CEDAB15E7BF5100017A65;
+			remoteInfo = "settingsapi-core-lib";
+		};
+		C7744F11160D39B500B4D516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70CEDA315E7BF5100017A65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C707D9CB15E99A5A00CD889E;
+			remoteInfo = "check-source-code-against-google-c++-style-guide";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C70CEDAA15E7BF5100017A65 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "${PROJECT_DIR}/../../../prefix";
+			dstSubfolderSpec = 0;
+			files = (
+				C7BB03A5160DECA8000AD3AA /* libloggingapi.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C70CEDAC15E7BF5100017A65 /* libloggingapi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libloggingapi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70CEDAF15E7BF5100017A65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C70CEDB315E7BF5100017A65 /* loggingapi-core-lib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loggingapi-core-lib-Prefix.pch"; sourceTree = "<group>"; };
+		C70CEDBD15E7BF5100017A65 /* loggingapiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggingapiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70CEDBE15E7BF5100017A65 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C70EAF151630CF27001A8E49 /* LoggingAPIInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingAPIInterface.h; sourceTree = "<group>"; };
+		C70EAF161630CF27001A8E49 /* LoggingAPITrivial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingAPITrivial.h; sourceTree = "<group>"; };
+		C70EAF191630D3E2001A8E49 /* Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Formatter.h; sourceTree = "<group>"; };
+		C70EAF1A1630D3E2001A8E49 /* FormatterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatterInterface.h; sourceTree = "<group>"; };
+		C725AE29162E28EE00581153 /* ConsoleSinkTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleSinkTest.cpp; sourceTree = "<group>"; };
+		C73D72F916148B1E00AE28CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "loggingapi-core-libTests/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		C73D72FC16148C9000AE28CD /* LoggingAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoggingAPITest.cpp; sourceTree = "<group>"; };
+		C73D73461616A2AC00AE28CD /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		C73D73491616A2B600AE28CD /* Core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Core.cpp; sourceTree = "<group>"; };
+		C7409BBA16251CC500EBCF5D /* LoggerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoggerTest.cpp; sourceTree = "<group>"; };
+		C74628341606A37900717E19 /* libboost_unit_test_framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_unit_test_framework.a; path = "../../../libs/boostoniphone-generic.git/prefix/lib/libboost_unit_test_framework.a"; sourceTree = "<group>"; };
+		C74A862616359C4600E44D3C /* LoggingAPITrivial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoggingAPITrivial.cpp; sourceTree = "<group>"; };
+		C74D8208162F8410001460C5 /* FileSinkTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileSinkTest.cpp; sourceTree = "<group>"; };
+		C75401081634244500A5DD57 /* CriteriaChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CriteriaChecker.h; sourceTree = "<group>"; };
+		C75F3E0D16148A1A0023C0D2 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		C75F3E0E16148A1A0023C0D2 /* AttributeInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeInterface.h; sourceTree = "<group>"; };
+		C75F3E0F16148A1A0023C0D2 /* AttributeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeValue.h; sourceTree = "<group>"; };
+		C75F3E1016148A1A0023C0D2 /* AttributeValueInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeValueInterface.h; sourceTree = "<group>"; };
+		C75F3E1216148A1A0023C0D2 /* LoggingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingAPI.h; sourceTree = "<group>"; };
+		C75F3E1516148A1A0023C0D2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		C75F3E1916148A350023C0D2 /* TestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRunner.h; sourceTree = "<group>"; };
+		C75F3E1F16148A350023C0D2 /* TestRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestRunner.cpp; sourceTree = "<group>"; };
+		C75F3E2616148A470023C0D2 /* Attribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Attribute.cpp; sourceTree = "<group>"; };
+		C75F3E2D16148A470023C0D2 /* LoggingAPI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoggingAPI.cpp; sourceTree = "<group>"; };
+		C75F3E3716148AA60023C0D2 /* loggingapiTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loggingapiTests.h; sourceTree = "<group>"; };
+		C75F3E3816148AA60023C0D2 /* loggingapiTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = loggingapiTests.mm; sourceTree = "<group>"; };
+		C76ADAA7162CD9EA00A68146 /* LoggerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerInterface.h; sourceTree = "<group>"; };
+		C76ADAAA162CDE5200A68146 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		C76ADAAB162CDE5200A68146 /* RecordInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInterface.h; sourceTree = "<group>"; };
+		C76AF57A161BC3D1006484B4 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		C78CB486162CDE8F00860F8B /* ConsoleSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleSink.h; sourceTree = "<group>"; };
+		C78CB487162CDE8F00860F8B /* FileSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSink.h; sourceTree = "<group>"; };
+		C78CB488162CDE8F00860F8B /* SinkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinkInterface.h; sourceTree = "<group>"; };
+		C7AD265A163424F90005CA7E /* CriteriaChecker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CriteriaChecker.cpp; sourceTree = "<group>"; };
+		C7AD265F163425400005CA7E /* CriteriaCheckerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CriteriaCheckerTest.cpp; sourceTree = "<group>"; };
+		C7C123E7162CDEB5007E84B6 /* Record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Record.cpp; sourceTree = "<group>"; };
+		C7C123E9162CDEB5007E84B6 /* ConsoleSink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleSink.cpp; sourceTree = "<group>"; };
+		C7C123EA162CDEB5007E84B6 /* FileSink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileSink.cpp; sourceTree = "<group>"; };
+		C7D878D31630D43200DEE3EC /* Formatter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Formatter.cpp; sourceTree = "<group>"; };
+		C7EC7983162327B1003F39D6 /* loggingapi-core-libTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "loggingapi-core-libTests-Info.plist"; sourceTree = "<group>"; };
+		C7F746D616191E2000E20C88 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		C7F92004162F80BF00365D1A /* AttributeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C70CEDA915E7BF5100017A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70CEDB015E7BF5100017A65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70CEDB915E7BF5100017A65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70CEDBF15E7BF5100017A65 /* SenTestingKit.framework in Frameworks */,
+				C70CEDC215E7BF5100017A65 /* Foundation.framework in Frameworks */,
+				C70CEDC515E7BF5100017A65 /* libloggingapi.a in Frameworks */,
+				C74628351606A37900717E19 /* libboost_unit_test_framework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C707D9A215E912BE00CD889E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E2416148A470023C0D2 /* loggingapi */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+		C707D9AD15E912D300CD889E /* test */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E1616148A350023C0D2 /* include */,
+				C75F3E1A16148A350023C0D2 /* src */,
+			);
+			name = test;
+			path = ../../../test;
+			sourceTree = "<group>";
+		};
+		C707D9D715E99D7700CD889E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E0B16148A1A0023C0D2 /* loggingapi */,
+				C75F3E1516148A1A0023C0D2 /* README */,
+			);
+			name = include;
+			path = ../../../include;
+			sourceTree = "<group>";
+		};
+		C70CEDA115E7BF5100017A65 = {
+			isa = PBXGroup;
+			children = (
+				C707D9D715E99D7700CD889E /* include */,
+				C707D9AD15E912D300CD889E /* test */,
+				C707D9A215E912BE00CD889E /* src */,
+				C70CEDB115E7BF5100017A65 /* loggingapi */,
+				C70CEDC615E7BF5100017A65 /* loggingapiTests */,
+				C70CEDAE15E7BF5100017A65 /* Frameworks */,
+				C70CEDAD15E7BF5100017A65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C70CEDAD15E7BF5100017A65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C70CEDAC15E7BF5100017A65 /* libloggingapi.a */,
+				C70CEDBD15E7BF5100017A65 /* loggingapiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C70CEDAE15E7BF5100017A65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C74628341606A37900717E19 /* libboost_unit_test_framework.a */,
+				C70CEDAF15E7BF5100017A65 /* Foundation.framework */,
+				C70CEDBE15E7BF5100017A65 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C70CEDB115E7BF5100017A65 /* loggingapi */ = {
+			isa = PBXGroup;
+			children = (
+				C70CEDB215E7BF5100017A65 /* Supporting Files */,
+			);
+			name = loggingapi;
+			path = "loggingapi-core-lib";
+			sourceTree = "<group>";
+		};
+		C70CEDB215E7BF5100017A65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C70CEDB315E7BF5100017A65 /* loggingapi-core-lib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C70CEDC615E7BF5100017A65 /* loggingapiTests */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E3316148AA60023C0D2 /* loggingapi-core-libTests */,
+				C70CEDC715E7BF5100017A65 /* Supporting Files */,
+			);
+			name = loggingapiTests;
+			path = "loggingapi-core-libTests";
+			sourceTree = "<group>";
+		};
+		C70CEDC715E7BF5100017A65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7EC7983162327B1003F39D6 /* loggingapi-core-libTests-Info.plist */,
+				C73D72F816148B1E00AE28CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C70EAF181630D3E2001A8E49 /* formatters */ = {
+			isa = PBXGroup;
+			children = (
+				C70EAF191630D3E2001A8E49 /* Formatter.h */,
+				C70EAF1A1630D3E2001A8E49 /* FormatterInterface.h */,
+			);
+			path = formatters;
+			sourceTree = "<group>";
+		};
+		C725AE28162E28EE00581153 /* sinks */ = {
+			isa = PBXGroup;
+			children = (
+				C74D8208162F8410001460C5 /* FileSinkTest.cpp */,
+				C725AE29162E28EE00581153 /* ConsoleSinkTest.cpp */,
+			);
+			path = sinks;
+			sourceTree = "<group>";
+		};
+		C73D72FB16148C9000AE28CD /* loggingapi */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD265E163425400005CA7E /* criteria */,
+				C725AE28162E28EE00581153 /* sinks */,
+				C7409BB916251CC500EBCF5D /* loggers */,
+				C73D72FC16148C9000AE28CD /* LoggingAPITest.cpp */,
+			);
+			path = loggingapi;
+			sourceTree = "<group>";
+		};
+		C73D73451616A2AC00AE28CD /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C73D73461616A2AC00AE28CD /* Core.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		C73D73481616A2B600AE28CD /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C73D73491616A2B600AE28CD /* Core.cpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		C7409BB916251CC500EBCF5D /* loggers */ = {
+			isa = PBXGroup;
+			children = (
+				C7409BBA16251CC500EBCF5D /* LoggerTest.cpp */,
+			);
+			path = loggers;
+			sourceTree = "<group>";
+		};
+		C75401071634244500A5DD57 /* criteria */ = {
+			isa = PBXGroup;
+			children = (
+				C75401081634244500A5DD57 /* CriteriaChecker.h */,
+			);
+			path = criteria;
+			sourceTree = "<group>";
+		};
+		C75F3E0B16148A1A0023C0D2 /* loggingapi */ = {
+			isa = PBXGroup;
+			children = (
+				C75401071634244500A5DD57 /* criteria */,
+				C70EAF181630D3E2001A8E49 /* formatters */,
+				C70EAF151630CF27001A8E49 /* LoggingAPIInterface.h */,
+				C70EAF161630CF27001A8E49 /* LoggingAPITrivial.h */,
+				C78CB485162CDE8F00860F8B /* sinks */,
+				C76ADAA9162CDE5200A68146 /* records */,
+				C7F746D516191E2000E20C88 /* loggers */,
+				C73D73451616A2AC00AE28CD /* core */,
+				C75F3E0C16148A1A0023C0D2 /* attributes */,
+				C75F3E1216148A1A0023C0D2 /* LoggingAPI.h */,
+			);
+			path = loggingapi;
+			sourceTree = "<group>";
+		};
+		C75F3E0C16148A1A0023C0D2 /* attributes */ = {
+			isa = PBXGroup;
+			children = (
+				C7F92004162F80BF00365D1A /* AttributeConstants.h */,
+				C75F3E0D16148A1A0023C0D2 /* Attribute.h */,
+				C75F3E0E16148A1A0023C0D2 /* AttributeInterface.h */,
+				C75F3E0F16148A1A0023C0D2 /* AttributeValue.h */,
+				C75F3E1016148A1A0023C0D2 /* AttributeValueInterface.h */,
+			);
+			path = attributes;
+			sourceTree = "<group>";
+		};
+		C75F3E1616148A350023C0D2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E1916148A350023C0D2 /* TestRunner.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C75F3E1A16148A350023C0D2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C73D72FB16148C9000AE28CD /* loggingapi */,
+				C75F3E1F16148A350023C0D2 /* TestRunner.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C75F3E2416148A470023C0D2 /* loggingapi */ = {
+			isa = PBXGroup;
+			children = (
+				C74A862616359C4600E44D3C /* LoggingAPITrivial.cpp */,
+				C7AD2659163424F90005CA7E /* criteria */,
+				C7D878D21630D43200DEE3EC /* formatters */,
+				C7C123E6162CDEB5007E84B6 /* records */,
+				C7C123E8162CDEB5007E84B6 /* sinks */,
+				C76AF579161BC3D1006484B4 /* loggers */,
+				C73D73481616A2B600AE28CD /* core */,
+				C75F3E2516148A470023C0D2 /* attributes */,
+				C75F3E2D16148A470023C0D2 /* LoggingAPI.cpp */,
+			);
+			path = loggingapi;
+			sourceTree = "<group>";
+		};
+		C75F3E2516148A470023C0D2 /* attributes */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E2616148A470023C0D2 /* Attribute.cpp */,
+			);
+			path = attributes;
+			sourceTree = "<group>";
+		};
+		C75F3E3316148AA60023C0D2 /* loggingapi-core-libTests */ = {
+			isa = PBXGroup;
+			children = (
+				C75F3E3716148AA60023C0D2 /* loggingapiTests.h */,
+				C75F3E3816148AA60023C0D2 /* loggingapiTests.mm */,
+			);
+			path = "loggingapi-core-libTests";
+			sourceTree = SOURCE_ROOT;
+		};
+		C76ADAA9162CDE5200A68146 /* records */ = {
+			isa = PBXGroup;
+			children = (
+				C76ADAAA162CDE5200A68146 /* Record.h */,
+				C76ADAAB162CDE5200A68146 /* RecordInterface.h */,
+			);
+			path = records;
+			sourceTree = "<group>";
+		};
+		C76AF579161BC3D1006484B4 /* loggers */ = {
+			isa = PBXGroup;
+			children = (
+				C76AF57A161BC3D1006484B4 /* Logger.cpp */,
+			);
+			path = loggers;
+			sourceTree = "<group>";
+		};
+		C78CB485162CDE8F00860F8B /* sinks */ = {
+			isa = PBXGroup;
+			children = (
+				C78CB486162CDE8F00860F8B /* ConsoleSink.h */,
+				C78CB487162CDE8F00860F8B /* FileSink.h */,
+				C78CB488162CDE8F00860F8B /* SinkInterface.h */,
+			);
+			path = sinks;
+			sourceTree = "<group>";
+		};
+		C7AD2659163424F90005CA7E /* criteria */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD265A163424F90005CA7E /* CriteriaChecker.cpp */,
+			);
+			path = criteria;
+			sourceTree = "<group>";
+		};
+		C7AD265E163425400005CA7E /* criteria */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD265F163425400005CA7E /* CriteriaCheckerTest.cpp */,
+			);
+			path = criteria;
+			sourceTree = "<group>";
+		};
+		C7C123E6162CDEB5007E84B6 /* records */ = {
+			isa = PBXGroup;
+			children = (
+				C7C123E7162CDEB5007E84B6 /* Record.cpp */,
+			);
+			path = records;
+			sourceTree = "<group>";
+		};
+		C7C123E8162CDEB5007E84B6 /* sinks */ = {
+			isa = PBXGroup;
+			children = (
+				C7C123E9162CDEB5007E84B6 /* ConsoleSink.cpp */,
+				C7C123EA162CDEB5007E84B6 /* FileSink.cpp */,
+			);
+			path = sinks;
+			sourceTree = "<group>";
+		};
+		C7D878D21630D43200DEE3EC /* formatters */ = {
+			isa = PBXGroup;
+			children = (
+				C7D878D31630D43200DEE3EC /* Formatter.cpp */,
+			);
+			path = formatters;
+			sourceTree = "<group>";
+		};
+		C7F746D516191E2000E20C88 /* loggers */ = {
+			isa = PBXGroup;
+			children = (
+				C76ADAA7162CD9EA00A68146 /* LoggerInterface.h */,
+				C7F746D616191E2000E20C88 /* Logger.h */,
+			);
+			path = loggers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C70CEDAB15E7BF5100017A65 /* loggingapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70CEDD115E7BF5100017A65 /* Build configuration list for PBXNativeTarget "loggingapi" */;
+			buildPhases = (
+				C70CEDA815E7BF5100017A65 /* Sources */,
+				C70CEDA915E7BF5100017A65 /* Frameworks */,
+				C70CEDAA15E7BF5100017A65 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7744F12160D39B500B4D516 /* PBXTargetDependency */,
+			);
+			name = loggingapi;
+			productName = "settingsapi-core-lib";
+			productReference = C70CEDAC15E7BF5100017A65 /* libloggingapi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C70CEDBC15E7BF5100017A65 /* loggingapiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70CEDD415E7BF5100017A65 /* Build configuration list for PBXNativeTarget "loggingapiTests" */;
+			buildPhases = (
+				C70CEDB815E7BF5100017A65 /* Sources */,
+				C70CEDB915E7BF5100017A65 /* Frameworks */,
+				C70CEDBA15E7BF5100017A65 /* Resources */,
+				C70CEDBB15E7BF5100017A65 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C70CEDC415E7BF5100017A65 /* PBXTargetDependency */,
+			);
+			name = loggingapiTests;
+			productName = "settingsapi-core-libTests";
+			productReference = C70CEDBD15E7BF5100017A65 /* loggingapiTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C70CEDA315E7BF5100017A65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "IO Stark";
+			};
+			buildConfigurationList = C70CEDA615E7BF5100017A65 /* Build configuration list for PBXProject "loggingapi-core-lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C70CEDA115E7BF5100017A65;
+			productRefGroup = C70CEDAD15E7BF5100017A65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C70CEDAB15E7BF5100017A65 /* loggingapi */,
+				C70CEDBC15E7BF5100017A65 /* loggingapiTests */,
+				C707D9CB15E99A5A00CD889E /* check-source-code-against-google-c++-style-guide */,
+				C707D9D015E99ACB00CD889E /* build-docset */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C70CEDBA15E7BF5100017A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73D72FA16148B1E00AE28CD /* InfoPlist.strings in Resources */,
+				C712B1381623A0CB001C6DCF /* loggingapiTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C707D9CF15E99A5F00CD889E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/../../../scripts/google-cpp-style-guide\nchmod 700 ./check.sh\n./check.sh ${PROJECT_DIR}/../../../include\n./check.sh ${PROJECT_DIR}/../../../src\n./check.sh ${PROJECT_DIR}/../../../test";
+		};
+		C707D9D415E99AD100CD889E /* Build Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/../../../scripts/doc\nchmod 700 ./tool-docset.sh\n./tool-docset.sh -f \"${PROJECT_DIR}/../../../doc/developer/developer.doxyfile\" -s \"${PROJECT_DIR}/../../../src \\\n${PROJECT_DIR}/../../../include\" -o \"${PROJECT_DIR}/../../../doc/developer\" -n \"API\" -r \"com.iostark\" -l \"true\"";
+		};
+		C70CEDBB15E7BF5100017A65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C70CEDA815E7BF5100017A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75F3E2E16148A470023C0D2 /* Attribute.cpp in Sources */,
+				C75F3E3216148A470023C0D2 /* LoggingAPI.cpp in Sources */,
+				C73D734A1616A2B600AE28CD /* Core.cpp in Sources */,
+				C76AF57B161BC3D1006484B4 /* Logger.cpp in Sources */,
+				C7C123EB162CDEB5007E84B6 /* Record.cpp in Sources */,
+				C7C123EC162CDEB5007E84B6 /* ConsoleSink.cpp in Sources */,
+				C7C123ED162CDEB5007E84B6 /* FileSink.cpp in Sources */,
+				C7D878D41630D43200DEE3EC /* Formatter.cpp in Sources */,
+				C7AD265D163425100005CA7E /* CriteriaChecker.cpp in Sources */,
+				C74A862716359C4600E44D3C /* LoggingAPITrivial.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70CEDB815E7BF5100017A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75F3E2316148A350023C0D2 /* TestRunner.cpp in Sources */,
+				C75F3E3B16148AA60023C0D2 /* loggingapiTests.mm in Sources */,
+				C73D72FD16148C9000AE28CD /* LoggingAPITest.cpp in Sources */,
+				C7409BBB16251CC500EBCF5D /* LoggerTest.cpp in Sources */,
+				C725AE2A162E28EE00581153 /* ConsoleSinkTest.cpp in Sources */,
+				C74D8209162F8410001460C5 /* FileSinkTest.cpp in Sources */,
+				C7AD2660163425400005CA7E /* CriteriaCheckerTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C70CEDC415E7BF5100017A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70CEDAB15E7BF5100017A65 /* loggingapi */;
+			targetProxy = C70CEDC315E7BF5100017A65 /* PBXContainerItemProxy */;
+		};
+		C7744F12160D39B500B4D516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C707D9CB15E99A5A00CD889E /* check-source-code-against-google-c++-style-guide */;
+			targetProxy = C7744F11160D39B500B4D516 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C73D72F816148B1E00AE28CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C73D72F916148B1E00AE28CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C707D9CD15E99A5A00CD889E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C707D9CE15E99A5A00CD889E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C707D9D215E99ACB00CD889E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C707D9D315E99ACB00CD889E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C70CEDCF15E7BF5100017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../libs/boostoniphone-generic.git/prefix/include",
+					"${SRCROOT}/../../../libs/target-conditionals.git/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		C70CEDD015E7BF5100017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../libs/boostoniphone-generic.git/prefix/include",
+					"${SRCROOT}/../../../libs/target-conditionals.git/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Release;
+		};
+		C70CEDD215E7BF5100017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/loggingapi_core_lib.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "loggingapi-core-lib/loggingapi-core-lib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"NDEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../include",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C70CEDD315E7BF5100017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/loggingapi_core_lib.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "loggingapi-core-lib/loggingapi-core-lib-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../../include",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C70CEDD515E7BF5100017A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "loggingapi-core-lib/loggingapi-core-lib-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../../../include",
+					"${SRCROOT}/../../../test/include",
+				);
+				INFOPLIST_FILE = "loggingapi-core-libTests/loggingapi-core-libTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../libs/boostoniphone-generic.git/prefix/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C70CEDD615E7BF5100017A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "loggingapi-core-lib/loggingapi-core-lib-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../../../include",
+					"${SRCROOT}/../../../test/include",
+				);
+				INFOPLIST_FILE = "loggingapi-core-libTests/loggingapi-core-libTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../libs/boostoniphone-generic.git/prefix/lib/",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C707D9CC15E99A5A00CD889E /* Build configuration list for PBXAggregateTarget "check-source-code-against-google-c++-style-guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C707D9CD15E99A5A00CD889E /* Debug */,
+				C707D9CE15E99A5A00CD889E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C707D9D115E99ACB00CD889E /* Build configuration list for PBXAggregateTarget "build-docset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C707D9D215E99ACB00CD889E /* Debug */,
+				C707D9D315E99ACB00CD889E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70CEDA615E7BF5100017A65 /* Build configuration list for PBXProject "loggingapi-core-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70CEDCF15E7BF5100017A65 /* Debug */,
+				C70CEDD015E7BF5100017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70CEDD115E7BF5100017A65 /* Build configuration list for PBXNativeTarget "loggingapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70CEDD215E7BF5100017A65 /* Debug */,
+				C70CEDD315E7BF5100017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70CEDD415E7BF5100017A65 /* Build configuration list for PBXNativeTarget "loggingapiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70CEDD515E7BF5100017A65 /* Debug */,
+				C70CEDD615E7BF5100017A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C70CEDA315E7BF5100017A65 /* Project object */;
+}

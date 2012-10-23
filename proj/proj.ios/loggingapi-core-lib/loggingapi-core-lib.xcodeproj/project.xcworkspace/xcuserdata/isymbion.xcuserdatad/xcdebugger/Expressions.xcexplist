@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "loggingapi::criteria::CriteriaChecker::pass(std::vector&lt;loggingapi::attributes::AttributeInterface*, std::allocator&lt;loggingapi::attributes::AttributeInterface*&gt; &gt; const&amp;, std::vector&lt;loggingapi::attributes::AttributeInterface*, std::allocator&lt;loggingapi::attributes::AttributeInterface*&gt; &gt; const&amp;):CriteriaChecker.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "settingsapi::test::SettingsAPITestSuite::writeConfigurationFile::test_method():SettingsAPITest.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "kJSONContent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "test::loggingapi::criteria::CriteriaCheckerFixture::~CriteriaCheckerFixture():CriteriaCheckerTest.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "settingsapi::impl::json::libjson0::buildNativeJSONTreeNode(settingsapi::SettingNodeInterface*):SettingsWriter.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "loggingapi::sinks::FileSink::log(loggingapi::records::RecordInterface*):FileSink.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "std::vector&lt;loggingapi::attributes::AttributeInterface*, std::allocator&lt;loggingapi::attributes::AttributeInterface*&gt; &gt;::_M_range_check(unsigned long) const:stl_vector.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "this-&gt;size()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "settingsapi::test::SettingsAPITestSuite::readConfigurationFile::test_method():SettingsAPITest.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "myNode0-&gt;getKey()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "test::loggingapi::sinks::FileSinkTestSuite::log::test_method():FileSinkTest.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "logRecord.size()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
